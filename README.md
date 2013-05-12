@@ -1,4 +1,4 @@
 ssphp-speakers
 ==============
 
-Speakers
+Speakers module for ZF2 to be included into the main site.
