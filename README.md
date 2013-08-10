@@ -47,3 +47,4 @@ Installation
         // ...
     );
     ```
+2. Ensure to add the needed table to the database using the sql file in data.
