@@ -5,6 +5,11 @@ return array(
             'ssppress-press-controller' => 'SspPress\Controller\PressController',
         ),
     ),
+    'view_helpers' => array(
+        'invokables' => array(
+            'sidebar' => 'Application\View\Helper\Sidebar',
+        ),
+    ),
     'router' => array(
         'routes' => array(
             'press-index' => array(
@@ -35,6 +40,11 @@ return array(
     'view_manager' => array(
         'template_path_stack' => array(
             'SspPress' => __DIR__ . '/../view',
+        ),
+    ),
+    'service_manager' => array(
+        'factories' => array(
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory'
         ),
     ),
 );

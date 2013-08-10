@@ -1,7 +1,36 @@
-<strong>Module:</strong>        SspPress &raquo;
-<strong>Controller:</strong>    Press &raquo;
-<strong>Action:</strong>        index
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="row">
+                <div class="span9">
+                    <section id="block-download">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a> <span class="divider">/</span></li>
+                            <li class="active">SunshinePHP Conference</li>
+                        </ul>
+                        <div class="page-header">
+                            <h1>In The Press</h1>
+                        </div>
+                        <div id="block-mine">
+                            <p>The SunshinePHP Developer Conference has been in the press a great deal, so this page is to provide a listing of where we are:</p>
+                            <p>&nbsp;</p>
 
-<?php
+                            <?php if ($releases) { ?>
+                                <ul>
 
-echo 'deeper press-view-index-test';
+                                    <?php foreach ($releases as $release): ?>
+                                        <li><a href="<?= $release['link']; ?>" title="<?= $release['title']; ?>" target="_blank"><?= $release['title']; ?></a></li>
+                                    <?php endforeach; ?>
+
+                                </ul>
+                            <?php } ?>
+
+                        </div>
+
+                    </section>
+                </div>
+                <?php echo $this->sidebar(); ?>
+            </div>
+        </div>
+    </div>
+</div>
