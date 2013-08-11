@@ -9,6 +9,7 @@
 
 namespace SspPress;
 
+use SspPress\Model\ReleaseTable;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 //use Zend\Mvc\MvcEvent;
