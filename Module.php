@@ -34,4 +34,17 @@ class Module implements AutoloaderProviderInterface
     {
         return include __DIR__ . '/config/module.config.php';
     }
+
+    public function getServiceConfig()
+    {
+        return array(
+            'factories' => array(
+                'ReleaseTable' => function($sm) {
+                    $db = $sm->get('Zend\Db\Adapter\Adapter');
+                    $table = new ReleaseTable($db);
+                    return $table;
+                },
+            ),
+        );
+    }
 }
