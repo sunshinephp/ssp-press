@@ -37,6 +37,18 @@ return array(
             ),
         ),
     ),
+    'navigation' => array(
+        'default' => array(
+            array(
+                'label' => 'Press',
+                'route' => 'press-index',
+                'lastmod' => '2013-09-08',
+                'changefreq' => 'monthly',
+                'priority' => '0.5',
+                'order' => '80',
+            ),
+        ),
+    ),
     'view_manager' => array(
         'template_path_stack' => array(
             'SspPress' => __DIR__ . '/../view',
